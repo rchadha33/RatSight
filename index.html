@@ -41,5 +41,27 @@
 			
 			</section>
 		</main>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const imageContainer = document.querySelector('.dynamic-image');
+				let imageIndex = 0;
+				const images = [
+					'Infographics/Rodent Complaints.png',
+					'Infographics/Closed Cases.png',
+					'Infographics/In-Progress Cases.png',
+				];
+	
+				function updateImage() {
+					imageContainer.style.backgroundImage = `url(${images[imageIndex]})`;
+					imageIndex = (imageIndex + 1) % images.length;
+				}
+	
+				updateImage(); // Initial image load
+	
+				window.addEventListener('scroll', function() {
+					updateImage();
+				});
+			});
+		</script>
 	</body>
 </html>

@@ -39,4 +39,11 @@ section h2 {
     height: auto;
 }
 
+.dynamic-image {
+    width: 100%;
+    height: 400px; /* Adjust as needed */
+    background-size: cover;
+    background-position: center;
+}
+
 /* Additional styling as needed for responsiveness and aesthetics */
