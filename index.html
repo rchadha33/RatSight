@@ -1,49 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Rats!</title>
-		<link rel="icon" href="/images/logo.png" type="image/png" />
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body>
-		<header>
-			<h1>New York Rat Sightings</h1>
-			<nav>
-				<!-- Navigation Links can be added here if needed -->
-			</nav>
-		</header>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rats!</title>
+    <link rel="icon" href="/img/logo.png" type="image/png" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo:400,400i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <!-- Lightbox-->
+    <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Parallax-->
+    <link rel="stylesheet" href="vendor/onepage-scroll/onepage-scroll.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.png">
 
-		<main>
-			<!-- Dashboard Section -->
-			<section id="dashboard">
-				<h2>Rat Sightings Dashboard</h2>
-				<!-- Tableau Dashboard Embed Code -->
-        <div class='tableauPlaceholder' id='viz1701501113557' style='position: relative'><noscript><a href='#'><img alt='Rats in NYC ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;RatSightingsManhattan&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='RatSightingsManhattan&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;RatSightingsManhattan&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1701501113557');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1416px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+  </head>
+  <body>
+    <!-- Title Screen Section 0-->
+    <div class="main">
+      <section class="bg-cover bg-center hero">
+        <div class="dark-overlay"></div>
+        <div class="position-relative z-index-1">
+          <div class="container text-center text-white">
+            <p class="font-italic lead">Uh oh New York, is that what I think it is?</p>
+            <h1 class="text-uppercase my-4">Rats!</h1>
+            <p class="font-italic lead">CS 6730-Team 15: Rachit Chadha, Azeez Ishaqui, Katherine Ginesky, Ahmed Elhussiny </p>
+          </div>
+        </div>
+        <div class="scroll-btn link-scroll"><i class="fas fa-angle-double-down"></i></div>
+      </section>
+    <!--Section 1: Tableau Map-->
+      <section id="1">
+        <div class="container">
+          <div class="text-center mb-5">
+            <div class="col-lg-6 mb-4 mb-lg-0" style="margin: 0 auto;">
+              <header class="text-center">
+                <h2 class="text-uppercase lined">Rat Sightings in New York City</h2>
+              </header>
+            </div>
+          </div>
+          <div class="d-flex h-100 align-items-center">
+              <!---Tableau Viz --->
+              <div class='tableauPlaceholder' id='viz1701838382192' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewRats&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NewRats&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NewRats&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1701838382192');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>            
+          </div>
+        </div>
+      </section>
+      <!--Section 2: -->
+      <section class="bg-gray">
+        <div class="d-flex h-100 align-items-center">
+          <div class="container">
+            <header class="mb-5 text-center">
+              <h2 class="text-uppercase lined">Section 2 Title</h2>
+            </header>
+            <div class="col-lg-12 text-center">
+              <p>Rodent Cartogram</p>
+              <img src="img/Rodent_Cartogram.gif" alt="Rats Gif" height="500" width="1000" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section 3: -->
+      <section>
+        <div class="d-flex h-100 align-items-center">
+          <div class="container">
+            <header class="text-center mb-5">
+              <h2 class="text-uppercase lined">Section 3 Title</h2>
+            </header>
+            <div class='tableauPlaceholder' id='viz1701838632609' style='position: relative'><noscript><a href='#'><img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Su&#47;SunBurst_Final&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SunBurst_Final&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Su&#47;SunBurst_Final&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1701838632609');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+          </div>
+        </div>
+      </section>
+      <!--Section 4: -->
+      <section class="bg-gray">
+        <div class="d-flex h-100 align-items-center">
+          <div class="container">
+            <header class="text-center mb-5">
+              <h2 class="text-uppercase lined">Section 4 Title</h2>
+            </header>
+          </div>
+        </div>
+      </section>
 
-			<!-- Insights Section -->
-			<section id="insights">
-				<h2>Insights</h2>
-				<p>
-					Here, you can discuss the key findings or insights gathered from the
-					data.
-				</p>
-				<div class='tableauPlaceholder' id='viz1701658937731' style='position: relative'><noscript><a href='#'><img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Su&#47;SunBurst_Final&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SunBurst_Final&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Su&#47;SunBurst_Final&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1701658937731');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-				<br>
-				<p><h2>Rodent Cartogram</h2></p>
-				<img src="Images/Rodent_Cartogram.gif" alt="Rats Gif" height="500" width="1000" style="display: block; margin-left: auto; margin-right: auto;">
-			</section>
+          <!-- Section 5: -->
+          <section>
+            <div class="d-flex h-100 align-items-center">
+              <div class="container">
+                <header class="text-center mb-5">
+                  <h2 class="text-uppercase lined">Section 5 Title</h2>
+                </header>
+                <div class="row">
+                  <div class="col-lg-12 text-center">
+                    <p>You can make also a portfolio or image gallery.</p>
+              </div>
+            </div>
+          </section>
+    
+    <!--Final Section or Section 6-->
+    <section class="bg-gray">
+      <div class="d-flex h-100 align-items-center">
+        <div class="container">
+          <header class="text-center mb-5">
+            <h2 class="text-uppercase lined">Section 6 Title</h2>
+          </header>
+        </div>
+      </div>
+    </section>
+  </div>
 
-			<!-- Recommendations Section -->
-			<section id="recommendations">
-				<h2>Recommendations</h2>
-				<p>
-					This section can offer recommendations or actions to be taken based on
-					the insights.
-				</p>
-			
-			</section>
-		</main>
-	</body>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/onepage-scroll/jquery.onepage-scroll.min.js"></script>
+    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="js/front.js"></script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
 </html>
